@@ -1,4 +1,40 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Foodie
+
+Instragram, but for Food and recipes
+
+## Team
+
+Danny Ajilore, Luigi Palermo, Lucian Mot
+
+## Work schedule
+
+3 day sprint a week: Tuesday, Wednesday, Thursday
+Daily schedule: Stand up - 10:00am
+                Catch up - 2:00pm
+                Retro - 4:30pm(at the end of the sprint)
+
+## Work approach
+
+Agile system, 3 day sprint a week, point assesment of tasks complexity, github repo, and trello kanban board
+
+## MVP
+
+* Users can sign up
+* Users can sign in(with created account)
+* Users can sign out(when logged in)
+* User can post a picture
+* User can see other posted picture
+* Picture is saved into our database
+
+## Front-end
+
+* React
+
+## Back-end
+
+* Node
+* Mongo DB
+* Exilir/TypeScript
 
 ## Available Scripts
 
