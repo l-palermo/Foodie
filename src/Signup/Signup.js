@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class SignUp extends Component {
+class Signup extends Component {
   constructor(props) {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -26,4 +26,6 @@ class SignUp extends Component {
   }
 
 }
+
+export default Signup
 

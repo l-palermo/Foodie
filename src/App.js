@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import { SignUp } from './Signup/Signup';
+import React from 'react';
+import Foodie from './Foodie/Foodie';
 
 function App() {
   return (
     <div className="App">
-      <SignUp />
+      <Foodie />
     </div>
   );
 }
