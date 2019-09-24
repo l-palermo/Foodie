@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Input from '../Components/Input'
+import Input from '../Components/Input';
+import Button from '../Components/Button';
 
 class Signup extends Component {
   constructor(props) {
@@ -19,6 +20,8 @@ class Signup extends Component {
     e.preventDefault();
   }
 
+
+
   handleInput(e) {
     let value = e.target.value;
     let name = e.target.name;
@@ -36,6 +39,7 @@ class Signup extends Component {
 
   render() {
     return (
+      <form>
       <Input type={'text'}
         title={'Full Name'}
         name={'name'}
@@ -43,6 +47,7 @@ class Signup extends Component {
         placeholder={'Enter Your Name'}
         handleChange={this.handleInput}
       />
+      </form>
     );
   }
 
