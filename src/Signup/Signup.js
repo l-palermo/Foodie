@@ -20,6 +20,11 @@ class Signup extends Component {
     e.preventDefault();
   }
 
+  handleFormSubmit(e) {
+    e.preventDefault();
+    let userData = this.state.newUser;
+    console.log(userData);
+  }
 
 
   handleInput(e) {
@@ -39,7 +44,7 @@ class Signup extends Component {
 
   render() {
     return (
-      <form>
+      <form onSubmit={this.handleFormSubmit}>
       <Input type={'text'}
         title={'Full Name'}
         name={'name'}
@@ -47,6 +52,10 @@ class Signup extends Component {
         placeholder={'Enter Your Name'}
         handleChange={this.handleInput}
       />
+      <Button
+      action={this.handleFormSubmit}
+      title={"Sign-up"} />
+      {/* This is the submit button */}
       </form>
     );
   }
