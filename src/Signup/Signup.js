@@ -19,14 +19,6 @@ class Signup extends Component {
     e.preventDefault();
   }
 
-  // handleFullName(e) {
-  //   let value = e.target.value;
-  //   this.setState(prevState => ({
-  //     newUser:
-  //       { ...prevState.newUser, name: value }
-  //   }))
-  // }
-
   handleInput(e) {
     let value = e.target.value;
     let name = e.target.name;
