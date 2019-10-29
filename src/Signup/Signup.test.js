@@ -2,8 +2,14 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Signup from './Signup';
 
-xdescribe('Signup', () => {
-
+describe('Signup', () => {
+  describe('form', () => {
+    it('renders the name field', () => {
+      const wrapper = shallow(<Signup />);
+      const fullNameInput = wrapper.find('Input[title="Full Name"]');
+      expect(fullNameInput.length).toEqual(1);
+    })
+  })
 })
 
 // POTENTTIAL FEATURE TEST

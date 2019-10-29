@@ -11,22 +11,21 @@ class Signup extends Component {
         name: ""
       }
     }
-    this.handleSubmit = this.handleSubmit.bind(this);
+    // this.handleSubmit = this.handleSubmit.bind(this);
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
     this.handleInput = this.handleInput.bind(this);
   }
 
-  handleSubmit(e) {
-    alert(`The value is ${this.input.value}`);
-    e.preventDefault();
-  }
+  // handleSubmit(e) {
+  //   alert(`The value is ${this.input.value}`);
+  //   e.preventDefault();
+  // }
 
   handleFormSubmit(e) {
     e.preventDefault();
     let userData = this.state.newUser;
     console.log(userData);
   }
-
 
   handleInput(e) {
     let value = e.target.value;
