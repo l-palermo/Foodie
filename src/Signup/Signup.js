@@ -10,6 +10,8 @@ class Signup extends Component {
       newUser: {
         fullname: "",
         username: "",
+        dateOfBirth: "",
+        email: "",
         password: "",
         confirmPassword: ""
       }
@@ -62,6 +64,14 @@ class Signup extends Component {
           name={'username'}
           value={this.state.newUser.username}
           placeholder={'Username'}
+          onChange={this.handleInput}
+        />
+
+        <Input type={'date'}
+          title={'Date Of Birth'}
+          name={'dateOfBirth'}
+          value={this.state.newUser.dateOfBirth}
+          placeholder={'Date Of Birth'}
           onChange={this.handleInput}
         />
 
