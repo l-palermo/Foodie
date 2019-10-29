@@ -8,7 +8,8 @@ class Signup extends Component {
 
     this.state = {
       newUser: {
-        name: ""
+        name: "",
+        username: ""
       }
     }
     // this.handleSubmit = this.handleSubmit.bind(this);
@@ -42,16 +43,27 @@ class Signup extends Component {
 
   }
 
+
   render() {
     return (
       <form onSubmit={this.handleFormSubmit}>
         <Input type={'text'}
           title={'Full Name'}
-          name={'name'}
+          name={'fullname'}
           value={this.state.newUser.name}
           placeholder={'Enter Your Name'}
           onChange={this.handleInput}
         />
+
+        <Input type={'text'}
+          title={'Username'}
+          name={'username'}
+          value={this.state.newUser.username}
+          placeholder={'Username'}
+          onChange={this.handleInput}
+        />
+
+
         <Button
           action={this.handleFormSubmit}
           title={"Sign-up"} />
