@@ -8,8 +8,10 @@ class Signup extends Component {
 
     this.state = {
       newUser: {
-        name: "",
-        username: ""
+        fullname: "",
+        username: "",
+        password: "",
+        confirmPassword: ""
       }
     }
     // this.handleSubmit = this.handleSubmit.bind(this);
@@ -63,6 +65,21 @@ class Signup extends Component {
           onChange={this.handleInput}
         />
 
+        <Input type={'password'}
+          title={'Password'}
+          name={'password'}
+          value={this.state.newUser.password}
+          placeholder={'Password'}
+          onChange={this.handleInput}
+        />
+
+        <Input type={'password'}
+          title={'Confirm Password'}
+          name={'confirmPassword'}
+          value={this.state.newUser.confirmPassword}
+          placeholder={'Confirm Password'}
+          onChange={this.handleInput}
+        />
 
         <Button
           action={this.handleFormSubmit}
