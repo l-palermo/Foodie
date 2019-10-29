@@ -10,6 +10,13 @@ describe('Signup', () => {
       expect(fullNameInput.length).toEqual(1);
     })
   })
+
+  describe('#handleInput', () => {
+    const wrapper = shallow(<Signup />);
+    const fullNameInput = wrapper.find('Input[title="Full Name"]');
+    fullNameInput.simulate('change', { target: { name: "name", value: "Luigi" } });
+    expect(wrapper.state().newUser.name).toEqual("Luigi");
+  })
 })
 
 // POTENTTIAL FEATURE TEST
