@@ -12,6 +12,7 @@ class Signup extends Component {
       }
     }
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleFormSubmit = this.handleFormSubmit.bind(this);
     this.handleInput = this.handleInput.bind(this);
   }
 
@@ -45,17 +46,17 @@ class Signup extends Component {
   render() {
     return (
       <form onSubmit={this.handleFormSubmit}>
-      <Input type={'text'}
-        title={'Full Name'}
-        name={'name'}
-        value={this.state.newUser.name}
-        placeholder={'Enter Your Name'}
-        handleChange={this.handleInput}
-      />
-      <Button
-      action={this.handleFormSubmit}
-      title={"Sign-up"} />
-      {/* This is the submit button */}
+        <Input type={'text'}
+          title={'Full Name'}
+          name={'name'}
+          value={this.state.newUser.name}
+          placeholder={'Enter Your Name'}
+          onChange={this.handleInput}
+        />
+        <Button
+          action={this.handleFormSubmit}
+          title={"Sign-up"} />
+        {/* This is the submit button */}
       </form>
     );
   }
