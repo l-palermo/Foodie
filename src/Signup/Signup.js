@@ -21,10 +21,6 @@ class Signup extends Component {
     this.handleInput = this.handleInput.bind(this);
   }
 
-  // handleSubmit(e) {
-  //   alert(`The value is ${this.input.value}`);
-  //   e.preventDefault();
-  // }
 
   handleFormSubmit(e) {
     e.preventDefault();
@@ -51,6 +47,7 @@ class Signup extends Component {
   render() {
     return (
       <form onSubmit={this.handleFormSubmit}>
+        {/* Full Name */}
         <Input type={'text'}
           title={'Full Name'}
           name={'fullname'}
@@ -59,6 +56,7 @@ class Signup extends Component {
           onChange={this.handleInput}
         />
 
+        {/* Username */}
         <Input type={'text'}
           title={'Username'}
           name={'username'}
@@ -67,6 +65,16 @@ class Signup extends Component {
           onChange={this.handleInput}
         />
 
+        {/* Email */}
+        <Input type={'email'}
+          title={'Email'}
+          name={'email'}
+          value={this.state.newUser.email}
+          placeholder={'Email'}
+          onChange={this.handleInput}
+        />
+
+        {/* Date Of Birth */}
         <Input type={'date'}
           title={'Date Of Birth'}
           name={'dateOfBirth'}
@@ -75,6 +83,7 @@ class Signup extends Component {
           onChange={this.handleInput}
         />
 
+        {/* Password */}
         <Input type={'password'}
           title={'Password'}
           name={'password'}
@@ -83,6 +92,7 @@ class Signup extends Component {
           onChange={this.handleInput}
         />
 
+        {/* Confirm Password */}
         <Input type={'password'}
           title={'Confirm Password'}
           name={'confirmPassword'}
@@ -91,10 +101,11 @@ class Signup extends Component {
           onChange={this.handleInput}
         />
 
+        {/* Submit button */}
         <Button
           action={this.handleFormSubmit}
           title={"Sign-up"} />
-        {/* This is the submit button */}
+
       </form>
     );
   }
