@@ -3,3 +3,5 @@ jdk: openjdk11
 install: true
 script:
   - "mvn test"
+  - "cd react"
+  - "npm test"
