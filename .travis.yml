@@ -4,5 +4,8 @@ install: true
 script:
   - "mvn test"
   - "cd react"
-  - "npm run build"
+language: node_js
+node_js:
+- 8
+script:
   - "npm test"
