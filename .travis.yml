@@ -1,9 +1,10 @@
 language: java
 jdk: openjdk11
 install: true
-node_js: 10
-install: "npm install"
 script:
   - "mvn test"
   - "cd react"
+node_js: 10
+install: "npm install"
+script:
   - "npm test"
